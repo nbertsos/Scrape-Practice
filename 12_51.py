@@ -16,7 +16,7 @@ tags = soup('span')
 total = 0
 
 for span in tags :
-    value = int(span)
+    value = int(span.contents[0])
     total += value
 
 print(total)
